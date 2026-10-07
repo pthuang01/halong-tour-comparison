@@ -1,0 +1,1341 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>北越雙龍灣五日行程深度評比 ｜ 品冠仙境漂流 vs 雙遊船新潮版</title>
+    <!-- Google Fonts & Font Awesome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary: #0e3746;
+            --primary-light: #164e63;
+            --accent-gold: #c59b27;
+            --accent-gold-light: #fef3c7;
+            --cyan-ocean: #0284c7;
+            --cyan-bg: #f0f9ff;
+            --coral-orange: #ea580c;
+            --coral-bg: #fff7ed;
+            --bg-main: #f8fafc;
+            --text-dark: #1e293b;
+            --text-muted: #64748b;
+            --border-color: #e2e8f0;
+            --card-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.03);
+            --card-shadow-hover: 0 20px 30px -10px rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Noto Sans TC', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--bg-main);
+            color: var(--text-dark);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* 頂部導航 */
+        .navbar {
+            position: sticky;
+            top: 0;
+            background: rgba(255, 255, 255, 0.96);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            border-bottom: 1px solid var(--border-color);
+            padding: 1rem 2.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-brand {
+            font-size: 1.25rem;
+            font-weight: 900;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.8rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-muted);
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: var(--cyan-ocean);
+        }
+
+        /* Hero 視覺橫幅 */
+        .hero {
+            background: linear-gradient(135deg, rgba(14, 55, 70, 0.92) 0%, rgba(22, 78, 99, 0.88) 100%), 
+                        url('./images_comparison/grand_pioneers.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 5rem 2rem 4.5rem;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(197, 155, 39, 0.28);
+            border: 1px solid var(--accent-gold);
+            color: #fde047;
+            padding: 0.45rem 1.4rem;
+            border-radius: 9999px;
+            font-size: 0.92rem;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            margin-bottom: 1.25rem;
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            font-weight: 900;
+            margin-bottom: 1rem;
+            line-height: 1.3;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+
+        .hero p {
+            font-size: 1.15rem;
+            max-width: 820px;
+            margin: 0 auto 2.8rem;
+            color: #cbd5e1;
+            font-weight: 300;
+        }
+
+        /* 快速比較對決標題卡 */
+        .hero-compare-capsules {
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            max-width: 1040px;
+            margin: 0 auto;
+            gap: 1.5rem;
+            align-items: stretch;
+        }
+
+        .capsule {
+            background: rgba(255, 255, 255, 0.12);
+            backdrop-filter: blur(14px);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            padding: 1.8rem;
+            border-radius: 1.25rem;
+            text-align: left;
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .capsule:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+        }
+
+        .capsule-plan-a {
+            border-top: 5px solid #38bdf8;
+        }
+
+        .capsule-plan-b {
+            border-top: 5px solid #fb923c;
+        }
+
+        .capsule-title {
+            font-size: 1.3rem;
+            font-weight: 800;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .capsule-plan-a .capsule-title { color: #7dd3fc; }
+        .capsule-plan-b .capsule-title { color: #fdba74; }
+
+        .capsule-subtitle {
+            font-size: 0.95rem;
+            color: #e2e8f0;
+            margin-bottom: 1rem;
+        }
+
+        .capsule-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .capsule-tag {
+            font-size: 0.8rem;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 0.3rem 0.75rem;
+            border-radius: 0.35rem;
+            color: #f8fafc;
+            display: flex;
+            align-items: center;
+            gap: 0.35rem;
+        }
+
+        .vs-badge {
+            background: linear-gradient(135deg, #d97706, #f59e0b);
+            color: white;
+            font-weight: 900;
+            font-size: 1.3rem;
+            width: 3.5rem;
+            height: 3.5rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 20px rgba(245, 158, 11, 0.5);
+            align-self: center;
+        }
+
+        /* 容器寬度 */
+        .container {
+            max-width: 1240px;
+            margin: 0 auto;
+            padding: 3.5rem 1.5rem;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-header h2 {
+            font-size: 2.2rem;
+            font-weight: 900;
+            color: var(--primary);
+            margin-bottom: 0.6rem;
+        }
+
+        .section-header p {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+        }
+
+        /* 核心差異維度卡片 */
+        .dimension-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.75rem;
+            margin-bottom: 4.5rem;
+        }
+
+        .dimension-card {
+            background: white;
+            border-radius: 1.25rem;
+            padding: 1.75rem;
+            box-shadow: var(--card-shadow);
+            border: 1px solid var(--border-color);
+            transition: all 0.3s;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .dimension-card:hover {
+            box-shadow: var(--card-shadow-hover);
+            transform: translateY(-5px);
+        }
+
+        .dimension-icon {
+            width: 3.25rem;
+            height: 3.25rem;
+            border-radius: 0.85rem;
+            background: var(--cyan-bg);
+            color: var(--cyan-ocean);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.4rem;
+            margin-bottom: 1.1rem;
+        }
+
+        .dimension-title {
+            font-size: 1.2rem;
+            font-weight: 800;
+            margin-bottom: 1.1rem;
+            color: var(--primary);
+        }
+
+        .dimension-contrast {
+            display: flex;
+            flex-direction: column;
+            gap: 0.85rem;
+            font-size: 0.9rem;
+            flex-grow: 1;
+        }
+
+        .contrast-item {
+            padding: 0.75rem 0.9rem;
+            border-radius: 0.6rem;
+        }
+
+        .contrast-a {
+            background: var(--cyan-bg);
+            border-left: 4px solid var(--cyan-ocean);
+        }
+
+        .contrast-b {
+            background: var(--coral-bg);
+            border-left: 4px solid var(--coral-orange);
+        }
+
+        .contrast-label {
+            font-weight: 800;
+            display: block;
+            margin-bottom: 0.3rem;
+            font-size: 0.82rem;
+            letter-spacing: 0.03em;
+        }
+
+        .contrast-a .contrast-label { color: #0369a1; }
+        .contrast-b .contrast-label { color: #c2410c; }
+
+        /* 圖文對照畫廊 (Visual Highlights Gallery) */
+        .visual-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 4.5rem;
+        }
+
+        .gallery-card {
+            background: white;
+            border-radius: 1.25rem;
+            overflow: hidden;
+            box-shadow: var(--card-shadow);
+            border: 1px solid var(--border-color);
+            transition: transform 0.3s;
+        }
+
+        .gallery-card:hover {
+            transform: translateY(-4px);
+        }
+
+        .gallery-img-wrap {
+            height: 190px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .gallery-img-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .gallery-card:hover .gallery-img-wrap img {
+            transform: scale(1.06);
+        }
+
+        .gallery-tag {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            padding: 0.3rem 0.7rem;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 800;
+            color: white;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+        }
+
+        .tag-plan-a { background: #0284c7; }
+        .tag-plan-b { background: #ea580c; }
+        .tag-both { background: #059669; }
+
+        .gallery-content {
+            padding: 1.25rem;
+        }
+
+        .gallery-title {
+            font-size: 1.05rem;
+            font-weight: 800;
+            color: var(--primary);
+            margin-bottom: 0.4rem;
+        }
+
+        .gallery-desc {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            line-height: 1.5;
+        }
+
+        /* 逐日行程深度對比時間軸 */
+        .day-timeline {
+            display: flex;
+            flex-direction: column;
+            gap: 2.75rem;
+            margin-bottom: 4.5rem;
+        }
+
+        .day-row {
+            background: white;
+            border-radius: 1.5rem;
+            box-shadow: var(--card-shadow);
+            border: 1px solid var(--border-color);
+            overflow: hidden;
+            display: grid;
+            grid-template-columns: 130px 1fr 1fr;
+        }
+
+        .day-badge-col {
+            background: linear-gradient(180deg, var(--primary) 0%, var(--primary-light) 100%);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        .day-num {
+            font-size: 2.5rem;
+            font-weight: 900;
+            line-height: 1;
+        }
+
+        .day-label {
+            font-size: 0.85rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            opacity: 0.85;
+            margin-top: 0.35rem;
+        }
+
+        .day-plan-box {
+            padding: 2.2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1.35rem;
+        }
+
+        .day-plan-box.plan-a {
+            background: #ffffff;
+            border-right: 1px solid var(--border-color);
+        }
+
+        .day-plan-box.plan-b {
+            background: #fafaf9;
+        }
+
+        .plan-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 0.85rem;
+            border-bottom: 2px solid #f1f5f9;
+        }
+
+        .plan-title-tag {
+            font-weight: 800;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .plan-a .plan-title-tag { color: var(--cyan-ocean); }
+        .plan-b .plan-title-tag { color: var(--coral-orange); }
+
+        .route-headline {
+            font-size: 1.1rem;
+            font-weight: 800;
+            color: var(--text-dark);
+            line-height: 1.5;
+        }
+
+        /* 內嵌行程小圖 */
+        .plan-thumbnail-wrap {
+            height: 140px;
+            border-radius: 0.75rem;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .plan-thumbnail-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .thumbnail-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0,0,0,0.75));
+            color: white;
+            font-size: 0.78rem;
+            padding: 0.4rem 0.8rem;
+            font-weight: 600;
+        }
+
+        .key-feature-box {
+            background: white;
+            border: 1px solid var(--border-color);
+            border-radius: 0.85rem;
+            padding: 1rem;
+            font-size: 0.9rem;
+            line-height: 1.55;
+        }
+
+        .feature-title {
+            font-weight: 800;
+            margin-bottom: 0.45rem;
+            display: flex;
+            align-items: center;
+            gap: 0.45rem;
+            color: var(--primary);
+            font-size: 0.95rem;
+        }
+
+        .meal-hotel-stack {
+            display: flex;
+            flex-direction: column;
+            gap: 0.65rem;
+            font-size: 0.88rem;
+        }
+
+        .info-pill {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.65rem;
+            background: rgba(241, 245, 249, 0.75);
+            padding: 0.65rem 0.9rem;
+            border-radius: 0.55rem;
+        }
+
+        .info-pill i {
+            margin-top: 0.25rem;
+            color: var(--text-muted);
+            width: 1.1rem;
+            text-align: center;
+        }
+
+        .highlight-text {
+            color: #b91c1c;
+            font-weight: 800;
+        }
+
+        .highlight-wine {
+            color: #7c2d12;
+            font-weight: 800;
+        }
+
+        /* 餐標與亮點大對決表格 */
+        .comparison-table-wrapper {
+            background: white;
+            border-radius: 1.25rem;
+            box-shadow: var(--card-shadow);
+            border: 1px solid var(--border-color);
+            overflow-x: auto;
+            margin-bottom: 4.5rem;
+        }
+
+        table.comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+            font-size: 0.95rem;
+        }
+
+        table.comparison-table th {
+            background: #f8fafc;
+            padding: 1.35rem 1.6rem;
+            font-weight: 800;
+            color: var(--primary);
+            border-bottom: 2px solid var(--border-color);
+            font-size: 1rem;
+        }
+
+        table.comparison-table td {
+            padding: 1.25rem 1.6rem;
+            border-bottom: 1px solid var(--border-color);
+            vertical-align: middle;
+        }
+
+        table.comparison-table tr:hover {
+            background: #f8fafc;
+        }
+
+        .badge-win {
+            display: inline-block;
+            background: #dcfce7;
+            color: #15803d;
+            font-weight: 800;
+            padding: 0.2rem 0.6rem;
+            border-radius: 0.3rem;
+            font-size: 0.75rem;
+            margin-left: 0.4rem;
+        }
+
+        /* 適合族群指南 */
+        .persona-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2.25rem;
+            margin-bottom: 4.5rem;
+        }
+
+        .persona-card {
+            border-radius: 1.5rem;
+            padding: 2.75rem 2.25rem;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+        }
+
+        .persona-card-a {
+            background: linear-gradient(145deg, #0f172a 0%, #0369a1 100%);
+        }
+
+        .persona-card-b {
+            background: linear-gradient(145deg, #1c1917 0%, #c2410c 100%);
+        }
+
+        .persona-header h3 {
+            font-size: 1.65rem;
+            font-weight: 900;
+            margin-bottom: 0.6rem;
+        }
+
+        .persona-header p {
+            font-size: 0.95rem;
+            opacity: 0.9;
+            margin-bottom: 1.75rem;
+        }
+
+        .persona-checklist {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.9rem;
+            margin-bottom: 2rem;
+        }
+
+        .persona-checklist li {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        .persona-checklist i {
+            color: #fde047;
+            font-size: 1.15rem;
+            margin-top: 0.15rem;
+        }
+
+        .verdict-tag {
+            align-self: flex-start;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(8px);
+            padding: 0.5rem 1.3rem;
+            border-radius: 9999px;
+            font-weight: 800;
+            font-size: 0.85rem;
+            margin-bottom: 1.25rem;
+        }
+
+        /* 頁尾 */
+        footer {
+            background: #0f172a;
+            color: #94a3b8;
+            text-align: center;
+            padding: 3.5rem 1.5rem;
+            font-size: 0.9rem;
+        }
+
+        footer p {
+            margin-bottom: 0.5rem;
+        }
+
+        /* 響應式優化 */
+        @media (max-width: 992px) {
+            .day-row {
+                grid-template-columns: 1fr;
+            }
+            .day-badge-col {
+                padding: 1.2rem;
+                flex-direction: row;
+                gap: 0.85rem;
+            }
+            .day-num { font-size: 1.6rem; }
+            .hero-compare-capsules {
+                grid-template-columns: 1fr;
+            }
+            .vs-badge {
+                margin: 0.5rem auto;
+            }
+            .persona-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 頂部導覽列 -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <i class="fa-solid fa-ship" style="color: var(--cyan-ocean);"></i>
+            <span>北越雙龍灣五日遊 ｜ 兩大頂規行程比較</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#overview">亮點速覽</a></li>
+            <li><a href="#gallery">實景寫真</a></li>
+            <li><a href="#timeline">逐日對決</a></li>
+            <li><a href="#dining">餐標對照</a></li>
+            <li><a href="#recommendation">選擇建議</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero 橫幅 -->
+    <header class="hero">
+        <div class="hero-badge"><i class="fa-solid fa-crown"></i> 六星先鋒號遊輪 ｜ 兩大旗艦方案深度評比</div>
+        <h1>頂級美饌慢活 vs 雙遊船新潮打卡</h1>
+        <p>兩個行程皆安排入住「下龍灣先鋒號 Grand Pioneers 六星遊輪露臺海景房」與「河內國際頂級五星飯店」，但在美食餐標、夜間娛樂與景點排程上各有千秋！</p>
+
+        <!-- 快速對照膠囊 -->
+        <div class="hero-compare-capsules">
+            <div class="capsule capsule-plan-a">
+                <div class="capsule-title">
+                    <i class="fa-solid fa-gem"></i>
+                    <span>版本 A：品冠・仙境漂流版</span>
+                </div>
+                <div class="capsule-subtitle">極致美饌・舒壓慢活・尊榮私密</div>
+                <div class="capsule-tags">
+                    <span class="capsule-tag"><i class="fa-solid fa-utensils"></i> 岩洞龍蝦晚宴</span>
+                    <span class="capsule-tag"><i class="fa-solid fa-spa"></i> 越式按摩 90 分鐘</span>
+                    <span class="capsule-tag"><i class="fa-solid fa-shrimp"></i> US$55 龍蝦吃到飽</span>
+                </div>
+            </div>
+
+            <div class="vs-badge">VS</div>
+
+            <div class="capsule capsule-plan-b">
+                <div class="capsule-title">
+                    <i class="fa-solid fa-bolt"></i>
+                    <span>版本 B：新潮・雙遊船大世界版</span>
+                </div>
+                <div class="capsule-subtitle">雙遊船派對・紅白酒暢飲・網美打卡</div>
+                <div class="capsule-tags">
+                    <span class="capsule-tag"><i class="fa-solid fa-ship"></i> 國賓號夜遊船派對</span>
+                    <span class="capsule-tag"><i class="fa-solid fa-wine-glass"></i> 先鋒號酒水暢飲1.5hr</span>
+                    <span class="capsule-tag"><i class="fa-solid fa-water"></i> 河內大世界夜間大秀</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <!-- 核心差異 4 大維度 -->
+        <section id="overview" class="section-header">
+            <h2>4 大核心關鍵維度 PK</h2>
+            <p>一眼看清兩套行程在旅遊體驗上的本質區別</p>
+        </section>
+
+        <div class="dimension-grid">
+            <!-- 維度 1：遊船 -->
+            <div class="dimension-card">
+                <div class="dimension-icon"><i class="fa-solid fa-ship"></i></div>
+                <h3 class="dimension-title">遊船策略與夜間體驗</h3>
+                <div class="dimension-contrast">
+                    <div class="contrast-item contrast-a">
+                        <span class="contrast-label">版本 A（品冠仙境）</span>
+                        <strong>單過夜船＋陸地洞穴宴</strong>：D1 晚間在下龍灣神秘「龍騰碧珠洞」享用燭光晚宴，D2 登先鋒號過夜。
+                    </div>
+                    <div class="contrast-item contrast-b">
+                        <span class="contrast-label">版本 B（新潮雙船）</span>
+                        <strong>雙遊船熱鬧體驗</strong>：D1 晚間先登「國賓號 Ambassador II」夜遊派對船吃 Buffet，D2 登先鋒號過夜。
+                    </div>
+                </div>
+            </div>
+
+            <!-- 維度 2：餐食 -->
+            <div class="dimension-card">
+                <div class="dimension-icon"><i class="fa-solid fa-utensils"></i></div>
+                <h3 class="dimension-title">餐食預算與亮點</h3>
+                <div class="dimension-contrast">
+                    <div class="contrast-item contrast-a">
+                        <span class="contrast-label">版本 A（品冠仙境）</span>
+                        <strong>奢華海鮮老饕首選</strong>：D1 享半隻龍蝦；D3 晚餐安排高端法越餐廳 <strong>US$55 龍蝦吃到飽</strong>！
+                    </div>
+                    <div class="contrast-item contrast-b">
+                        <span class="contrast-label">版本 B（新潮雙船）</span>
+                        <strong>酒水暢飲與特色餐</strong>：先鋒號晚餐享 <strong>1.5hr 紅白酒暢飲</strong>；D3 晚餐吃大世界韓式烤肉火鍋 (US$20)。
+                    </div>
+                </div>
+            </div>
+
+            <!-- 維度 3：景點 -->
+            <div class="dimension-card">
+                <div class="dimension-icon"><i class="fa-solid fa-camera"></i></div>
+                <h3 class="dimension-title">市區景點取向</h3>
+                <div class="dimension-contrast">
+                    <div class="contrast-item contrast-a">
+                        <span class="contrast-label">版本 A（品冠仙境）</span>
+                        <strong>經典法式人文老城</strong>：漫遊三十六古街電瓶車、百年歌劇院、大教堂、西湖鎮國寺古剎。
+                    </div>
+                    <div class="contrast-item contrast-b">
+                        <span class="contrast-label">版本 B（新潮雙船）</span>
+                        <strong>最新網美地標滿檔</strong>：河內大世界 Mega Grand World (水舞秀+貢多拉)、華閭古鎮、西湖樂天 Mall。
+                    </div>
+                </div>
+            </div>
+
+            <!-- 維度 4：舒壓 -->
+            <div class="dimension-card">
+                <div class="dimension-icon"><i class="fa-solid fa-spa"></i></div>
+                <h3 class="dimension-title">舒壓休閒配套</h3>
+                <div class="dimension-contrast">
+                    <div class="contrast-item contrast-a">
+                        <span class="contrast-label">版本 A（品冠仙境）</span>
+                        <strong>贈送全身舒壓</strong>：第一天特別包含 <strong>90 分鐘越式全身按摩</strong>，洗去飛行疲憊。
+                    </div>
+                    <div class="contrast-item contrast-b">
+                        <span class="contrast-label">版本 B（新潮雙船）</span>
+                        <strong>豐富視覺派對</strong>：第一天國賓號 DJ 派對秀，第三天大型夜間實景航海大秀。
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 亮點寫真對照畫廊 (圖文並茂區) -->
+        <section id="gallery" class="section-header">
+            <h2>核心特色 ｜ 實景寫真圖文對照</h2>
+            <p>精選雙方代表性打卡亮點與頂規配置</p>
+        </section>
+
+        <div class="visual-gallery">
+            <!-- 圖 1: 共同亮點 先鋒號 -->
+            <div class="gallery-card">
+                <div class="gallery-img-wrap">
+                    <img src="./images_comparison/grand_pioneers.jpg" alt="先鋒號 Grand Pioneers 六星遊輪">
+                    <span class="gallery-tag tag-both">雙方共同頂規</span>
+                </div>
+                <div class="gallery-content">
+                    <h4 class="gallery-title">先鋒號 Grand Pioneers 六星遊輪</h4>
+                    <p class="gallery-desc">下龍灣全新現代化頂級奢華旗艦，保證入住全露臺私人海景房，享受尊榮航海體驗。</p>
+                </div>
+            </div>
+
+            <!-- 圖 2: 版本 A 龍蝦美食饗宴 -->
+            <div class="gallery-card">
+                <div class="gallery-img-wrap">
+                    <img src="./images_comparison/lobster_dinner.jpg" alt="奢華龍蝦吃到飽">
+                    <span class="gallery-tag tag-plan-a">版本 A 獨家美饌</span>
+                </div>
+                <div class="gallery-content">
+                    <h4 class="gallery-title">D3 越法創意料理＋龍蝦吃到飽</h4>
+                    <p class="gallery-desc">餐標高達 US$55，品嘗多道式精緻法越料理搭配鮮甜龍蝦無限享用，老饕極致饗宴。</p>
+                </div>
+            </div>
+
+            <!-- 圖 3: 版本 B 國賓號夜間遊船 -->
+            <div class="gallery-card">
+                <div class="gallery-img-wrap">
+                    <img src="./images_comparison/ambassador_cruise.jpg" alt="國賓號夜遊船">
+                    <span class="gallery-tag tag-plan-b">版本 B 獨家遊船</span>
+                </div>
+                <div class="gallery-content">
+                    <h4 class="gallery-title">國賓號 II 海上夜間派對饗宴</h4>
+                    <p class="gallery-desc">第一晚即出海夜遊下龍灣，甲板 Buffet 自助百匯、璀璨海景夜色與 DJ 現場派對。</p>
+                </div>
+            </div>
+
+            <!-- 圖 4: 版本 B 河內大世界 -->
+            <div class="gallery-card">
+                <div class="gallery-img-wrap">
+                    <img src="./images_comparison/mega_grand_world.jpg" alt="河內大世界 Mega Grand World">
+                    <span class="gallery-tag tag-plan-b">版本 B 2024最新亮點</span>
+                </div>
+                <div class="gallery-content">
+                    <h4 class="gallery-title">河內大世界 Mega Grand World</h4>
+                    <p class="gallery-desc">威尼斯歐風彩色造鎮、貢多拉運河巡禮，並欣賞 20:30 大型實景聲光水舞《The Grand Voyage》。</p>
+                </div>
+            </div>
+
+            <!-- 圖 5: 版本 A 越式全身按摩 -->
+            <div class="gallery-card">
+                <div class="gallery-img-wrap">
+                    <img src="./images_comparison/vietnam_spa.jpg" alt="越式全身按摩90分鐘">
+                    <span class="gallery-tag tag-plan-a">版本 A 舒壓贈送</span>
+                </div>
+                <div class="gallery-content">
+                    <h4 class="gallery-title">越式全身精油按摩 90 分鐘</h4>
+                    <p class="gallery-desc">第一天抵達下龍市即安排享受 90 分鐘越式按摩，驅散航程疲勞，開啟慢調度假模式。</p>
+                </div>
+            </div>
+
+            <!-- 圖 6: 雙方 陸龍灣長安舟遊 -->
+            <div class="gallery-card">
+                <div class="gallery-img-wrap">
+                    <img src="./images_comparison/trang_an.jpg" alt="陸龍灣長安生態保護區">
+                    <span class="gallery-tag tag-both">雙方經典必遊</span>
+                </div>
+                <div class="gallery-content">
+                    <h4 class="gallery-title">陸龍灣 ｜ 長安生態輕舟探祕</h4>
+                    <p class="gallery-desc">世界自然與文化雙遺產，搭乘手搖竹筏穿梭於鬼斧神工的喀斯特石灰岩穿洞與碧綠湖光。</p>
+                </div>
+            </div>
+
+            <!-- 圖 7: 版本 A 河內老城人文 -->
+            <div class="gallery-card">
+                <div class="gallery-img-wrap">
+                    <img src="./images_comparison/hanoi_old_quarter.jpg" alt="河內三十六古街">
+                    <span class="gallery-tag tag-plan-a">版本 A 經典人文</span>
+                </div>
+                <div class="gallery-content">
+                    <h4 class="gallery-title">三十六古街漫遊 ＋ 法國區</h4>
+                    <p class="gallery-desc">搭乘綠能電瓶車悠遊歷史老城區，並探訪百年河內歌劇院、聖約瑟夫大教堂與古街風華。</p>
+                </div>
+            </div>
+
+            <!-- 圖 8: 版本 B 樂天購物 Mall -->
+            <div class="gallery-card">
+                <div class="gallery-img-wrap">
+                    <img src="./images_comparison/lotte_westlake.jpg" alt="西湖樂天購物廣場">
+                    <span class="gallery-tag tag-plan-b">版本 B 潮流血拼</span>
+                </div>
+                <div class="gallery-content">
+                    <h4 class="gallery-title">西湖樂天購物中心 Lotte Mall</h4>
+                    <p class="gallery-desc">2023 全新開幕東南亞最大旗艦購物中心，國際精品、超市伴手禮與潮流美食一次滿足。</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 逐日行程對照時間軸 -->
+        <section id="timeline" class="section-header">
+            <h2>Day 1 ～ Day 5 逐日深度對比</h2>
+            <p>每日路線、景點、餐食與住宿並排檢視</p>
+        </section>
+
+        <div class="day-timeline">
+
+            <!-- DAY 1 -->
+            <div class="day-row">
+                <div class="day-badge-col">
+                    <span class="day-num">01</span>
+                    <span class="day-label">Day One</span>
+                </div>
+
+                <!-- Plan A -->
+                <div class="day-plan-box plan-a">
+                    <div class="plan-header">
+                        <span class="plan-title-tag"><i class="fa-solid fa-feather"></i> 版本 A：品冠仙境漂流</span>
+                        <span style="background:#e0f2fe; color:#0284c7; padding:0.25rem 0.6rem; border-radius:4px; font-size:0.75rem; font-weight:800;">洞穴宴+按摩</span>
+                    </div>
+                    <div class="route-headline">
+                        桃園 ✈ 河內 ➔ 下龍市 ➔ 龍騰碧珠洞（岩洞神話晚宴）➔ 越式全身按摩 90 分鐘
+                    </div>
+                    <div class="plan-thumbnail-wrap">
+                        <img src="./images_comparison/vietnam_spa.jpg" alt="越式全身按摩">
+                        <div class="thumbnail-caption"><i class="fa-solid fa-spa"></i> D1 亮點：越式專業全身舒壓 90 分鐘</div>
+                    </div>
+                    <div class="key-feature-box">
+                        <div class="feature-title"><i class="fa-solid fa-star"></i> 當日特色亮點</div>
+                        走進天然鐘乳石岩洞內享用浪漫燭光晚宴（半隻龍蝦雙主菜），餐後享受專業 90 分鐘越式按摩，徹底放鬆飛行疲憊。
+                    </div>
+                    <div class="meal-hotel-stack">
+                        <div class="info-pill"><i class="fa-solid fa-utensils"></i> <span><strong>午餐</strong>：Maison Sen 豪華海陸自助百匯 (US$20/含飲料)</span></div>
+                        <div class="info-pill"><i class="fa-solid fa-utensils"></i> <span><strong>晚餐</strong>：<span class="highlight-text">龍騰碧珠洞晚餐 (雙主菜含半隻龍蝦)</span></span></div>
+                        <div class="info-pill"><i class="fa-solid fa-hotel"></i> <span><strong>住宿</strong>：下龍溫德姆傳奇 / DC遊艇精品 / 麗笙藍 (五星)</span></div>
+                    </div>
+                </div>
+
+                <!-- Plan B -->
+                <div class="day-plan-box plan-b">
+                    <div class="plan-header">
+                        <span class="plan-title-tag"><i class="fa-solid fa-bolt"></i> 版本 B：新潮雙遊船版</span>
+                        <span style="background:#ffedd5; color:#c2410c; padding:0.25rem 0.6rem; border-radius:4px; font-size:0.75rem; font-weight:800;">纜車+夜遊船</span>
+                    </div>
+                    <div class="route-headline">
+                        桃園 ✈ 河內 ➔ 下龍灣【女皇雙層纜車＋下龍之眼摩天輪＋浪漫錦鯉橋】➔ 國賓號夜間遊船派對
+                    </div>
+                    <div class="plan-thumbnail-wrap">
+                        <img src="./images_comparison/ambassador_cruise.jpg" alt="國賓號夜間遊船">
+                        <div class="thumbnail-caption"><i class="fa-solid fa-ship"></i> D1 亮點：Ambassador II 國賓號夜航百匯派對</div>
+                    </div>
+                    <div class="key-feature-box">
+                        <div class="feature-title"><i class="fa-solid fa-star"></i> 當日特色亮點</div>
+                        下午先搭乘創世界紀錄雙層纜車俯瞰海灣，晚上登 Ambassador II 國賓號享受海灣自助餐、夜景航行與夜間音樂表演。
+                    </div>
+                    <div class="meal-hotel-stack">
+                        <div class="info-pill"><i class="fa-solid fa-utensils"></i> <span><strong>午餐</strong>：Sen Tonkin 越法創意 (US$16) 或 Tam Vi 米其林一星</span></div>
+                        <div class="info-pill"><i class="fa-solid fa-utensils"></i> <span><strong>晚餐</strong>：<span class="highlight-wine">國賓號 II Dinner Cruise 自助餐 (含軟飲) + 夜間派對</span></span></div>
+                        <div class="info-pill"><i class="fa-solid fa-hotel"></i> <span><strong>住宿</strong>：THE YACHT / 阿拉卡 A LA Carte / Sea Stars (五星)</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DAY 2 -->
+            <div class="day-row">
+                <div class="day-badge-col">
+                    <span class="day-num">02</span>
+                    <span class="day-label">Day Two</span>
+                </div>
+
+                <!-- Plan A -->
+                <div class="day-plan-box plan-a">
+                    <div class="plan-header">
+                        <span class="plan-title-tag"><i class="fa-solid fa-feather"></i> 版本 A：品冠仙境漂流</span>
+                        <span style="background:#e0f2fe; color:#0284c7; padding:0.25rem 0.6rem; border-radius:4px; font-size:0.75rem; font-weight:800;">先鋒號星級美饌</span>
+                    </div>
+                    <div class="route-headline">
+                        登【先鋒號 Grand Pioneers】六星遊輪 ➔ 巡弋下龍灣 ➔ 驚訝洞/天井洞 ➔ 越式春捲體驗 ➔ 夜宴下龍灣
+                    </div>
+                    <div class="plan-thumbnail-wrap">
+                        <img src="./images_comparison/grand_pioneers.jpg" alt="先鋒號露臺海景房">
+                        <div class="thumbnail-caption"><i class="fa-solid fa-anchor"></i> D2 亮點：先鋒號露臺海景房 ＋ 主廚多道式套餐</div>
+                    </div>
+                    <div class="key-feature-box">
+                        <div class="feature-title"><i class="fa-solid fa-star"></i> 當日特色亮點</div>
+                        登上下龍灣旗艦六星遊輪，入住每間房都有專屬露台的陽台海景房；晚上享用先鋒號主廚精緻套餐與夜釣墨魚。
+                    </div>
+                    <div class="meal-hotel-stack">
+                        <div class="info-pill"><i class="fa-solid fa-utensils"></i> <span><strong>午餐</strong>：先鋒號主廚精選百匯自助午餐 + Softdrink一杯</span></div>
+                        <div class="info-pill"><i class="fa-solid fa-utensils"></i> <span><strong>晚餐</strong>：先鋒號星級美饌套餐（主廚多道式精緻套餐）</span></div>
+                        <div class="info-pill"><i class="fa-solid fa-hotel"></i> <span><strong>住宿</strong>：【六星奢華遊輪】先鋒號 Grand Pioneers Cruise（露臺海景房）</span></div>
+                    </div>
+                </div>
+
+                <!-- Plan B -->
+                <div class="day-plan-box plan-b">
+                    <div class="plan-header">
+                        <span class="plan-title-tag"><i class="fa-solid fa-bolt"></i> 版本 B：新潮雙遊船版</span>
+                        <span style="background:#ffedd5; color:#c2410c; padding:0.25rem 0.6rem; border-radius:4px; font-size:0.75rem; font-weight:800;">先鋒號+酒水暢飲</span>
+                    </div>
+                    <div class="route-headline">
+                        登【先鋒號 Grand Pioneers】六星遊輪 ➔ 巡弋下龍灣 ➔ 驚訝洞鐘乳石 ➔ 船上落日 Happy Hour ➔ 晚宴
+                    </div>
+                    <div class="plan-thumbnail-wrap">
+                        <img src="./images_comparison/grand_pioneers.jpg" alt="先鋒號酒水暢飲">
+                        <div class="thumbnail-caption"><i class="fa-solid fa-wine-glass"></i> D2 亮點：先鋒號法越料理 ＋ 1.5hr 紅白酒無限暢飲</div>
+                    </div>
+                    <div class="key-feature-box">
+                        <div class="feature-title"><i class="fa-solid fa-star"></i> 當日特色亮點</div>
+                        同樣入住先鋒號露臺海景房，晚宴特別享有船上 1.5 小時紅白酒與果汁無限暢飲服務！
+                    </div>
+                    <div class="meal-hotel-stack">
+                        <div class="info-pill"><i class="fa-solid fa-utensils"></i> <span><strong>午餐</strong>：Grand Pioneers 豪華遊輪 BUFFET 午餐 + 軟飲(6選1)</span></div>
+                        <div class="info-pill"><i class="fa-solid fa-utensils"></i> <span><strong>晚餐</strong>：嚴選法越料理 + <span class="highlight-wine">船上無限暢飲 1.5 小時 (紅白酒/果汁)</span></span></div>
+                        <div class="info-pill"><i class="fa-solid fa-hotel"></i> <span><strong>住宿</strong>：【六星奢華遊輪】先鋒號 Grand Pioneers Cruise（露臺海景房）</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DAY 3 -->
+            <div class="day-row">
+                <div class="day-badge-col">
+                    <span class="day-num">03</span>
+                    <span class="day-label">Day Three</span>
+                </div>
+
+                <!-- Plan A -->
+                <div class="day-plan-box plan-a">
+                    <div class="plan-header">
+                        <span class="plan-title-tag"><i class="fa-solid fa-feather"></i> 版本 A：品冠仙境漂流</span>
+                        <span style="background:#dcfce7; color:#15803d; padding:0.25rem 0.6rem; border-radius:4px; font-size:0.75rem; font-weight:800;">龍蝦吃到飽勝出</span>
+                    </div>
+                    <div class="route-headline">
+                        太極晨喚 ➔ 英雄島 ➔ 返航樂活早午餐 ➔ 女皇雙層纜車+摩天輪 ➔ 河內三十六古街(電瓶車) ➔ 百年歌劇院
+                    </div>
+                    <div class="plan-thumbnail-wrap">
+                        <img src="./images_comparison/lobster_dinner.jpg" alt="龍蝦吃到飽">
+                        <div class="thumbnail-caption"><i class="fa-solid fa-utensils"></i> D3 晚餐極致亮點：越法餐廳 US$55 龍蝦吃到飽</div>
+                    </div>
+                    <div class="key-feature-box">
+                        <div class="feature-title"><i class="fa-solid fa-star"></i> 當日特色亮點</div>
+                        下午享受下龍灣纜車與河內歷史古街慢步調，晚間安排<strong>餐標高達 US$55 的「法越創意料理＋龍蝦吃到飽」</strong>！
+                    </div>
+                    <div class="meal-hotel-stack">
+                        <div class="info-pill"><i class="fa-solid fa-utensils"></i> <span><strong>午餐</strong>：味覺旅程~越式九層蒸鮮塔 (US$20)</span></div>
+                        <div class="info-pill"><i class="fa-solid fa-utensils"></i> <span><strong>晚餐</strong>：<span class="highlight-text">越法融合餐廳~創意料理+龍蝦吃到飽 (US$55)</span></span></div>
+                        <div class="info-pill"><i class="fa-solid fa-hotel"></i> <span><strong>住宿</strong>：保證入住 Grand Mercure 格蘭美爵 或 L7 河內西湖樂天 (五星)</span></div>
+                    </div>
+                </div>
+
+                <!-- Plan B -->
+                <div class="day-plan-box plan-b">
+                    <div class="plan-header">
+                        <span class="plan-title-tag"><i class="fa-solid fa-bolt"></i> 版本 B：新潮雙遊船版</span>
+                        <span style="background:#ffedd5; color:#c2410c; padding:0.25rem 0.6rem; border-radius:4px; font-size:0.75rem; font-weight:800;">河內大世界大秀</span>
+                    </div>
+                    <div class="route-headline">
+                        太極晨喚 ➔ 天井洞獨木舟 ➔ 鴻基島傳統市場與博物館 ➔ 【2024最新：河內大世界 Mega Grand World】水舞秀
+                    </div>
+                    <div class="plan-thumbnail-wrap">
+                        <img src="./images_comparison/mega_grand_world.jpg" alt="河內大世界水舞秀">
+                        <div class="thumbnail-caption"><i class="fa-solid fa-water"></i> D3 亮點：河內大世界貢多拉運河 ＋ 實景夜間大秀</div>
+                    </div>
+                    <div class="key-feature-box">
+                        <div class="feature-title"><i class="fa-solid fa-star"></i> 當日特色亮點</div>
+                        下午參觀鴻基島，晚間沉浸於「河內大世界」歐風威尼斯造鎮：搭貢多拉遊船、看東西橋，並欣賞 20:30 大型實景大秀。
+                    </div>
+                    <div class="meal-hotel-stack">
+                        <div class="info-pill"><i class="fa-solid fa-utensils"></i> <span><strong>午餐</strong>：下龍灣 iSeafood 或 Golden Bamboom 海鮮合菜 (US$20)</span></div>
+                        <div class="info-pill"><i class="fa-solid fa-utensils"></i> <span><strong>晚餐</strong>：河內大世界 KING BBQ 韓式燒烤火鍋自助餐 (US$20)</span></div>
+                        <div class="info-pill"><i class="fa-solid fa-hotel"></i> <span><strong>住宿</strong>：河內 L7 西湖樂天 或 Grand Mercure 或 Movenpick (五星)</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DAY 4 -->
+            <div class="day-row">
+                <div class="day-badge-col">
+                    <span class="day-num">04</span>
+                    <span class="day-label">Day Four</span>
+                </div>
+
+                <!-- Plan A -->
+                <div class="day-plan-box plan-a">
+                    <div class="plan-header">
+                        <span class="plan-title-tag"><i class="fa-solid fa-feather"></i> 版本 A：品冠仙境漂流</span>
+                        <span style="background:#e0f2fe; color:#0284c7; padding:0.25rem 0.6rem; border-radius:4px; font-size:0.75rem; font-weight:800;">三谷碧洞古寺</span>
+                    </div>
+                    <div class="route-headline">
+                        河內 ➔ 寧平陸龍灣 ➔ 長安生態湖輕舟探祕 ➔ 三谷碧洞古廟 ➔ 返回河內
+                    </div>
+                    <div class="plan-thumbnail-wrap">
+                        <img src="./images_comparison/trang_an.jpg" alt="長安生態輕舟探祕">
+                        <div class="thumbnail-caption"><i class="fa-solid fa-mountain-sun"></i> D4 亮點：長安生態湖輕舟探祕 ＋ 三谷碧洞古剎</div>
+                    </div>
+                    <div class="key-feature-box">
+                        <div class="feature-title"><i class="fa-solid fa-star"></i> 當日特色亮點</div>
+                        搭乘長安保護區手搖小舟穿梭石灰岩洞，並參觀幽靜的三谷碧洞（古老岩穴寺廟），步調清幽。
+                    </div>
+                    <div class="meal-hotel-stack">
+                        <div class="info-pill"><i class="fa-solid fa-utensils"></i> <span><strong>午餐</strong>：高原餐廳~道地農家風味料理 (市價 US$12)</span></div>
+                        <div class="info-pill"><i class="fa-solid fa-utensils"></i> <span><strong>晚餐</strong>：<span class="highlight-text">Bếp Prime 米其林精選~招牌香焰雞火鍋 (US$30)</span></span></div>
+                        <div class="info-pill"><i class="fa-solid fa-hotel"></i> <span><strong>住宿</strong>：保證入住 Grand Mercure 格蘭美爵 或 L7 河內西湖樂天 (五星)</span></div>
+                    </div>
+                </div>
+
+                <!-- Plan B -->
+                <div class="day-plan-box plan-b">
+                    <div class="plan-header">
+                        <span class="plan-title-tag"><i class="fa-solid fa-bolt"></i> 版本 B：新潮雙遊船版</span>
+                        <span style="background:#ffedd5; color:#c2410c; padding:0.25rem 0.6rem; border-radius:4px; font-size:0.75rem; font-weight:800;">華閭古鎮+樂天Mall</span>
+                    </div>
+                    <div class="route-headline">
+                        河內 ➔ 陸龍灣長安生態小舟 ➔ 寧平小會安「華閭古鎮」 ➔ 2023東南亞最大~西湖樂天購物廣場
+                    </div>
+                    <div class="plan-thumbnail-wrap">
+                        <img src="./images_comparison/lotte_westlake.jpg" alt="西湖樂天購物廣場">
+                        <div class="thumbnail-caption"><i class="fa-solid fa-bag-shopping"></i> D4 亮點：華閭古鎮燈籠夜景 ＋ 西湖樂天旗艦 Mall</div>
+                    </div>
+                    <div class="key-feature-box">
+                        <div class="feature-title"><i class="fa-solid fa-star"></i> 當日特色亮點</div>
+                        除長安小舟外，增加好拍好逛的華閭古鎮（仿會安燈籠街景），傍晚回河內直奔最新西湖樂天 Mall 逛街血拼。
+                    </div>
+                    <div class="meal-hotel-stack">
+                        <div class="info-pill"><i class="fa-solid fa-utensils"></i> <span><strong>午餐</strong>：寧平越式風味餐 (含酒水 US$15)</span></div>
+                        <div class="info-pill"><i class="fa-solid fa-utensils"></i> <span><strong>晚餐</strong>：米其林推薦~ 火焰雞火鍋風味餐 (含酒水 US$30)</span></div>
+                        <div class="info-pill"><i class="fa-solid fa-hotel"></i> <span><strong>住宿</strong>：河內 L7 西湖樂天 或 Grand Mercure 或 Movenpick (五星)</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DAY 5 -->
+            <div class="day-row">
+                <div class="day-badge-col">
+                    <span class="day-num">05</span>
+                    <span class="day-label">Day Five</span>
+                </div>
+
+                <!-- Plan A -->
+                <div class="day-plan-box plan-a">
+                    <div class="plan-header">
+                        <span class="plan-title-tag"><i class="fa-solid fa-feather"></i> 版本 A：品冠仙境漂流</span>
+                        <span style="background:#e0f2fe; color:#0284c7; padding:0.25rem 0.6rem; border-radius:4px; font-size:0.75rem; font-weight:800;">鎮國寺巡禮</span>
+                    </div>
+                    <div class="route-headline">
+                        河內西湖 ➔ 鎮國寺 ➔ 河內內排國際機場 ✈ 桃園
+                    </div>
+                    <div class="plan-thumbnail-wrap">
+                        <img src="./images_comparison/chenkuo.jpg" alt="鎮國寺古剎">
+                        <div class="thumbnail-caption"><i class="fa-solid fa-place-of-worship"></i> D5 亮點：西湖畔千年鎮國古寺巡禮</div>
+                    </div>
+                    <div class="key-feature-box">
+                        <div class="feature-title"><i class="fa-solid fa-star"></i> 當日特色亮點</div>
+                        早晨漫步西湖湖畔，參觀河內最古老的寺廟「鎮國古寺」，祈福拍照後前往機場。
+                    </div>
+                    <div class="meal-hotel-stack">
+                        <div class="info-pill"><i class="fa-solid fa-utensils"></i> <span><strong>早餐/午餐</strong>：飯店豐盛早餐 / 機上套餐</span></div>
+                        <div class="info-pill"><i class="fa-solid fa-house"></i> <span><strong>回程</strong>：溫暖的家</span></div>
+                    </div>
+                </div>
+
+                <!-- Plan B -->
+                <div class="day-plan-box plan-b">
+                    <div class="plan-header">
+                        <span class="plan-title-tag"><i class="fa-solid fa-bolt"></i> 版本 B：新潮雙遊船版</span>
+                        <span style="background:#ffedd5; color:#c2410c; padding:0.25rem 0.6rem; border-radius:4px; font-size:0.75rem; font-weight:800;">輕鬆退房搭機</span>
+                    </div>
+                    <div class="route-headline">
+                        飯店 ➔ 河內內排國際機場 ✈ 桃園
+                    </div>
+                    <div class="plan-thumbnail-wrap">
+                        <img src="./images_comparison/grand_mercure_pool.jpg" alt="五星飯店退房">
+                        <div class="thumbnail-caption"><i class="fa-solid fa-hotel"></i> D5 亮點：五星飯店悠閒早餐後專車送機</div>
+                    </div>
+                    <div class="key-feature-box">
+                        <div class="feature-title"><i class="fa-solid fa-star"></i> 當日特色亮點</div>
+                        飯店內悠閒享用早餐，之後直接由專車接送至河內機場辦理登機手續返回台灣。
+                    </div>
+                    <div class="meal-hotel-stack">
+                        <div class="info-pill"><i class="fa-solid fa-utensils"></i> <span><strong>早餐/午餐</strong>：飯店內自助早餐 / 機上簡餐</span></div>
+                        <div class="info-pill"><i class="fa-solid fa-house"></i> <span><strong>回程</strong>：甜蜜的家</span></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- 餐標與關鍵特色對比表格 -->
+        <section id="dining" class="section-header">
+            <h2>關鍵餐標與活動規格 PK 表</h2>
+            <p>透明對照各餐餐標預算與特殊安排</p>
+        </section>
+
+        <div class="comparison-table-wrapper">
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th style="width: 20%;">比較項目</th>
+                        <th style="width: 40%; color: var(--cyan-ocean);">版本 A：品冠・仙境漂流</th>
+                        <th style="width: 40%; color: var(--coral-orange);">版本 B：新潮・雙遊船大世界</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>D1 晚餐體驗</strong></td>
+                        <td>龍騰碧珠洞「岩洞神話晚宴」<br><span class="highlight-text">★ 雙主菜含半隻龍蝦</span> <span class="badge-win">獨特氛圍</span></td>
+                        <td>國賓號 II Dinner Cruise 自助餐<br>★ 含一杯軟飲＋海上夜間派對 <span class="badge-win">夜遊海景</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>D1 放鬆體驗</strong></td>
+                        <td><span class="highlight-text">越式全身按摩 90 分鐘</span> (包含在團費) <span class="badge-win">極致舒壓</span></td>
+                        <td>無安排按摩（以夜遊船派對為主）</td>
+                    </tr>
+                    <tr>
+                        <td><strong>D2 先鋒號晚餐</strong></td>
+                        <td>先鋒號星級美饌套餐（主廚多道式套餐）</td>
+                        <td>嚴選法越套餐 ＋ <span class="highlight-wine">1.5小時紅白酒/果汁無限暢飲</span> <span class="badge-win">酒水大方</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>D3 晚餐餐標</strong></td>
+                        <td>高端越法餐廳~創意料理 ＋ <span class="highlight-text">龍蝦吃到飽 (US$55)</span> <span class="badge-win">全場最高餐標</span></td>
+                        <td>河內大世界 KING BBQ 韓式燒烤火鍋自助餐 (US$20)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>D3 夜間景點</strong></td>
+                        <td>河內法式老城悠閒漫遊（三十六古街電瓶車）</td>
+                        <td>河內大世界 Mega Grand World（貢多拉遊船＋夜間大秀） <span class="badge-win">超強造鎮</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>D4 附加景點</strong></td>
+                        <td>幽靜自然文化景點：<strong>三谷碧洞</strong></td>
+                        <td>網美拍照＋購物：<strong>華閭古鎮 ＋ 西湖樂天 Mall</strong> <span class="badge-win">購物便利</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>D4 晚餐規格</strong></td>
+                        <td>米其林精選 Bếp Prime 香焰雞火鍋 (US$30)</td>
+                        <td>米其林推薦 火焰雞火鍋風味餐 (US$30) <span style="color:#64748b;">(雙方相同)</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>下龍灣纜車時段</strong></td>
+                        <td>Day 3 下午搭乘（白天遼闊海灣視角）</td>
+                        <td>Day 1 下午搭乘（接續傍晚遊船夜景）</td>
+                    </tr>
+                    <tr>
+                        <td><strong>保證河內五星住宿</strong></td>
+                        <td>保證入住 Grand Mercure 格蘭美爵 或 L7 西湖樂天</td>
+                        <td>L7 西湖樂天 / Grand Mercure / Movenpick 或同級</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- 選擇建議指南 -->
+        <section id="recommendation" class="section-header">
+            <h2>哪一個行程最適合您？</h2>
+            <p>根據您的出行偏好選擇心目中的完美北越之旅</p>
+        </section>
+
+        <div class="persona-grid">
+            <!-- 選擇 A -->
+            <div class="persona-card persona-card-a">
+                <div class="persona-header">
+                    <span class="verdict-tag"><i class="fa-solid fa-champagne-glasses"></i> 適合老饕與慢活放鬆者</span>
+                    <h3>選擇「版本 A：品冠仙境漂流」如果您...</h3>
+                    <p>重視餐飲精緻度、追求身心放鬆，不想一直排隊打卡趕行程</p>
+                </div>
+                <ul class="persona-checklist">
+                    <li><i class="fa-solid fa-check-circle"></i> <div><strong>熱愛龍蝦與頂級海鮮</strong>：從岩洞半隻龍蝦到第三晚每人 US$55 的「龍蝦吃到飽」，海鮮預算極高。</div></li>
+                    <li><i class="fa-solid fa-check-circle"></i> <div><strong>喜歡舒服放鬆的度假感</strong>：第一天就附贈 90 分鐘全身按摩，洗去疲勞。</div></li>
+                    <li><i class="fa-solid fa-check-circle"></i> <div><strong>偏好古樸文化與經典建築</strong>：享受三十六古街、百年歌劇院、三谷碧洞的自然幽靜。</div></li>
+                    <li><i class="fa-solid fa-check-circle"></i> <div><strong>不喜歡嘈雜商業商場</strong>：更注重飯店設施與用餐情調。</div></li>
+                </ul>
+                <div style="font-size: 0.88rem; opacity: 0.9; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.2);">★ 核心關鍵詞：極致餐標、龍蝦饗宴、岩洞燭光、舒壓按摩、悠閒慢調</div>
+            </div>
+
+            <!-- 選擇 B -->
+            <div class="persona-card persona-card-b">
+                <div class="persona-header">
+                    <span class="verdict-tag"><i class="fa-solid fa-camera-retro"></i> 適合拍照打卡與熱鬧社交者</span>
+                    <h3>選擇「版本 B：新潮雙遊船版」如果您...</h3>
+                    <p>喜歡豐富打卡點、夜生活熱鬧、喜歡微醺與大型造鎮商場</p>
+                </div>
+                <ul class="persona-checklist">
+                    <li><i class="fa-solid fa-check-circle"></i> <div><strong>想體驗兩次出海巡弋</strong>：第一晚搭國賓號派對船看夜景，第二天再住先鋒號六星過夜船。</div></li>
+                    <li><i class="fa-solid fa-check-circle"></i> <div><strong>喜愛小酌微醺</strong>：先鋒號晚餐提供長達 1.5 小時紅白酒與果汁無限暢飲。</div></li>
+                    <li><i class="fa-solid fa-check-circle"></i> <div><strong>熱愛打卡與夜間大秀</strong>：朝聖 2024 河內大世界貢多拉運河、華閭古鎮與大型水舞實景秀。</div></li>
+                    <li><i class="fa-solid fa-check-circle"></i> <div><strong>有購物逛街需求</strong>：第四天特別安排前往 2023 全新開幕的西湖樂天購物中心血拼。</div></li>
+                </ul>
+                <div style="font-size: 0.88rem; opacity: 0.9; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.2);">★ 核心關鍵詞：雙遊船出海、酒水無限暢飲、河內大世界水舞秀、樂天商場</div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p><strong>北越雙龍灣五日遊 ｜ 頂級遊輪行程深度對比手冊</strong></p>
+        <p>資料整理自品冠旅遊官方網頁及最新北越先鋒號五日團型 ｜ 建議依個人休閒喜好與餐飲偏好選擇最合適之方案</p>
+    </footer>
+
+</body>
+</html>
